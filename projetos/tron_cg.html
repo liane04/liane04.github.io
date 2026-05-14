@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo NEON DRIVE (Tron 3D) | Liane Duarte</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/projeto.css">
+</head>
+<body>
+    <header class="scrolled">
+        <a href="../index.html" class="logo">LD</a>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="../index.html#projetos">Projetos</a>
+            <a href="../index.html#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <a href="../index.html#projetos" class="back-link">← Voltar aos Projetos</a>
+
+        <div class="project-header">
+            <span class="project-number">08</span>
+            <h1>Jogo NEON DRIVE (Tron 3D)</h1>
+        </div>
+
+        <div class="project-tags">
+            <span class="tag">Computação Gráfica</span>
+            <span class="tag">3D</span>
+            <span class="tag">Game Dev</span>
+            <span class="tag">Three.js</span>
+            <span class="tag">WebGL</span>
+            <span class="tag">JavaScript</span>
+        </div>
+
+        <div class="project-content">
+            <h2>Sobre o Projeto</h2>
+            <p>Projeto de Computação Gráfica onde foi desenvolvido do zero o jogo <strong>NEON DRIVE</strong>, uma aplicação Web 3D imersiva fortemente inspirada no universo visual do Tron.</p>
+            <p>O foco do projeto esteve na fidelidade visual e rigor técnico na Web: construção de viaturas complexas exclusivamente a partir de primitivas geométricas base (BoxGeometry e CylinderGeometry), sistema avançado de menus com máquina de estados, e painel de controlo em tempo real via <code>lil-gui</code>.</p>
+
+            <div class="project-image-hero">
+                <img src="../assets/images/tron_cg/jogo_princiapal.png" alt="Gameplay do jogo Tron 3D">
+            </div>
+
+            <h2>Destaques Técnicos</h2>
+            <ul>
+                <li><strong>Construção por Primitivas:</strong> Motas e Hover-Skates detalhados construídos exclusivamente com transformações geométricas e hierarquias de primitivas, contendo cores neon personalizáveis na Garagem.</li>
+                <li><strong>Gráficos e Luzes:</strong> Alternância em tempo real entre câmara de perspetiva e ortográfica, iluminação dinâmica multicamada com shadow maps ajustados por bioma (arena) e otimização com <code>InstancedMesh</code>.</li>
+                <li><strong>Motor de Áudio Nativo:</strong> Integração da Web Audio API para efeitos sonoros procedurais (sintetizadores) e banda sonora com crossfade dinâmico entre menus e arenas.</li>
+                <li><strong>UI e Controlo:</strong> Interface desenhada com menus de transição suave e um painel de controlo (lil-gui) para manipular luz, áudio e câmara ao vivo.</li>
+            </ul>
+
+            <div class="project-gallery">
+                <div class="gallery-item">
+                    <img src="../assets/images/tron_cg/garagem.png" alt="Garagem e Seleção de Veículos">
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/tron_cg/colisao_motas.png" alt="Sistema de Colisão">
+                </div>
+                <div class="gallery-item">
+                    <img src="../assets/images/tron_cg/menu.png" alt="Menu Principal">
+                </div>
+            </div>
+        </div>
+
+        <div class="project-links">
+            <a href="https://github.com/liane04/CG_tron" class="cta-button" target="_blank">Ver no GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Liane Duarte</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

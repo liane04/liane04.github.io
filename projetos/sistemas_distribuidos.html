@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços de Monitorização Urbana | Liane Duarte</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/projeto.css">
+</head>
+<body>
+    <header class="scrolled">
+        <a href="../index.html" class="logo">LD</a>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="../index.html#projetos">Projetos</a>
+            <a href="../index.html#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <a href="../index.html#projetos" class="back-link">← Voltar aos Projetos</a>
+
+        <div class="project-header">
+            <span class="project-number">07</span>
+            <h1>Serviços de Monitorização Urbana</h1>
+        </div>
+
+        <div class="project-tags">
+            <span class="tag">C# / Sockets TCP</span>
+            <span class="tag">Sistemas Distribuídos</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Multithreading</span>
+        </div>
+
+        <div class="project-content">
+            <h2>Sobre o Projeto</h2>
+            <p>Desenvolvimento de um sistema distribuído para simulação de uma infraestrutura de monitorização ambiental urbana (sob o conceito <em>One Health</em>).</p>
+            <p>O sistema foi construído com base numa arquitetura de três entidades comunicantes via rede (Sensor → Gateway → Servidor) e focado em resolver problemas de alta concorrência e partilha de recursos.</p>
+            
+            <div class="project-image-hero">
+                <img src="../assets/images/sistemas_distribuidos/dashboard_sistemas.png" alt="Dashboard do Sistema Distribuído">
+            </div>
+
+            <h2>A Minha Contribuição (Servidor Central)</h2>
+            <ul>
+                <li><strong>Comunicação e Concorrência:</strong> Implementação do Servidor recorrendo a Sockets TCP em C# e gestão de ligações simultâneas de múltiplos Gateways usando Threads e Mutexes.</li>
+                <li><strong>Persistência Resiliente:</strong> Armazenamento das medições ambientais em base de dados MongoDB. Implementação de um sistema de segurança (fallback) para ficheiros JSON locais caso a base de dados ficasse offline.</li>
+                <li><strong>Processamento de Dados:</strong> Reconstrução de pacotes e armazenamento de streams de vídeo recebidos pela rede (em formato .mp4).</li>
+            </ul>
+
+            <h2>Tecnologias Utilizadas</h2>
+            <ul>
+                <li><strong>Linguagens & Redes:</strong> C#, Sockets TCP, Protocolo Textual Customizado.</li>
+                <li><strong>Persistência e Concorrência:</strong> MongoDB, JSON, Threads, Mutexes.</li>
+            </ul>
+        </div>
+
+        <div class="project-links">
+            <a href="https://github.com/Pedrom7/SistemasDistribuidos" class="cta-button" target="_blank">Ver no GitHub</a>
+            <a href="../assets/pdf/Relatório_Sistemas_distribuidos.pdf" class="cta-button" target="_blank">Ver Relatório</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Liane Duarte</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -116,15 +116,20 @@
 /* Project Images */
 .project-image-hero {
     margin: 2rem 0;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-image-hero img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 500px;
+    width: auto;
     height: auto;
     display: block;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Project Gallery Grid */
@@ -136,22 +141,27 @@
 }
 
 .gallery-item {
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid var(--border);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     display: block;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
 }
 
 /* Responsive */
